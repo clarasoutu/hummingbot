@@ -1,0 +1,62 @@
+2022-08-20 17:52:53,675 - 27368 - hummingbot.client.hummingbot_application - INFO - start command initiated.
+2022-08-20 17:52:53,693 - 27368 - hummingbot.core.network_iterator - INFO - Network status has changed to NetworkStatus.CONNECTED. Starting networking...
+2022-08-20 17:52:54,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - WARNING - binance is not ready. Please wait...
+2022-08-20 17:52:54,595 - 27368 - hummingbot.core.data_type.order_book_tracker - INFO - Initialized order book for LTC-USDT. 1/1 completed.
+2022-08-20 17:52:54,975 - 27368 - hummingbot.connector.exchange.binance.binance_api_order_book_data_source.BinanceAPIOrderBookDataSource - INFO - Subscribed to public order book and trade channels...
+2022-08-20 17:52:55,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - WARNING - binance is not ready. Please wait...
+2022-08-20 17:52:56,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:52:56,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:52:56,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - (LTC-USDT) Creating an ask order at [ p: 55.1813500000 s: 200.0000000 ] value: 11036.27 USDT spread: 1.00%
+2022-08-20 17:52:56,032 - 27368 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1661014376.0, "type": "OrderType.LIMIT", "trading_pair": "LTC-USDT", "amount": "200.0000000", "price": "55.1813500000", "order_id": "sell://LTC-USDT/aea73161e0fa86346104df5032", "creation_timestamp": 1661014376.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "SellOrderCreatedEvent", "event_source": "None_PaperTrade"}
+2022-08-20 17:52:56,677 - 27368 - hummingbot.core.rate_oracle.rate_oracle - INFO - Network status has changed to NetworkStatus.CONNECTED. Starting networking...
+2022-08-20 17:52:57,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:52:58,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:52:58,560 - 27368 - hummingbot.connector.exchange.altmarkets.altmarkets_api_order_book_data_source - NETWORK - Error fetching data from https://v2.altmarkets.io/api/v2/peatio/public/markets. HTTP status is 403. Retrying in 31s. <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>AltMarkets.io | Sche ... (truncated)
+2022-08-20 17:52:59,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:00,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:01,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:02,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:03,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:04,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:05,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:06,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:07,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:08,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:09,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:10,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:11,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:12,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:13,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:13,242 - 27368 - hummingbot.connector.parrot - ERROR - Unexpected error while requesting data from Hummingbot API.
+Traceback (most recent call last):
+  File "/home/msoutullo/projects/work/hummingbot/hummingbot/hummingbot/connector/parrot.py", line 35, in get_campaign_summary
+    campaigns = await get_active_campaigns(exchange, trading_pairs)
+  File "/home/msoutullo/projects/work/hummingbot/hummingbot/hummingbot/connector/parrot.py", line 71, in get_active_campaigns
+    resp_json = await resp.json()
+  File "/home/msoutullo/miniconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client_reqrep.py", line 1097, in json
+    raise ContentTypeError(
+aiohttp.client_exceptions.ContentTypeError: 0, message='Attempt to decode JSON with unexpected mimetype: text/html', url=URL('https://papi.hummingbot.io/v1/mining_data/campaigns')
+2022-08-20 17:53:14,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:15,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:15,118 - 27368 - hummingbot.connector.parrot - ERROR - Unexpected error while requesting data from Hummingbot API.
+Traceback (most recent call last):
+  File "/home/msoutullo/projects/work/hummingbot/hummingbot/hummingbot/connector/parrot.py", line 35, in get_campaign_summary
+    campaigns = await get_active_campaigns(exchange, trading_pairs)
+  File "/home/msoutullo/projects/work/hummingbot/hummingbot/hummingbot/connector/parrot.py", line 71, in get_active_campaigns
+    resp_json = await resp.json()
+  File "/home/msoutullo/miniconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client_reqrep.py", line 1097, in json
+    raise ContentTypeError(
+aiohttp.client_exceptions.ContentTypeError: 0, message='Attempt to decode JSON with unexpected mimetype: text/html', url=URL('https://papi.hummingbot.io/v1/mining_data/campaigns')
+2022-08-20 17:53:16,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:17,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:18,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:19,001 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:20,013 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:21,002 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:22,000 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:23,004 - 27368 - hummingbot.strategy.liquidity_mining.liquidity_mining - INFO - binance is ready. Trading started.
+2022-08-20 17:53:23,111 - 27368 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1661014403.0, "order_id": "sell://LTC-USDT/aea73161e0fa86346104df5032", "exchange_order_id": null, "event_name": "OrderCancelledEvent", "event_source": "None_PaperTrade"}

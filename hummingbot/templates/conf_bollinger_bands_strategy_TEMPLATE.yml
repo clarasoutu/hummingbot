@@ -1,0 +1,25 @@
+########################################################
+###         Bollinger Bands strategy config          ###
+########################################################
+
+template_version: 1
+strategy: null
+
+# Exchange and token parameters.
+exchange: null
+
+# The size of each order in specified quote amount
+order_amount: null
+
+# Token trading pair for the exchange, e.g. BTC-USDT - All pairs must match their quote asset
+markets: null
+
+# Max. percentage of base token amount to trade.
+base_amount_percentage: null
+
+# bollinger_bands and relative strength index Parameters
+volatility_days: null
+bb_upper_band: null
+bb_lower_band: null
+rsi_upper_threshold: null
+rsi_lower_threshold: null
