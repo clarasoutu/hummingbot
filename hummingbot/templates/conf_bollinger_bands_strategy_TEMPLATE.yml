@@ -18,7 +18,7 @@ markets: null
 base_amount_percentage: null
 
 # bollinger_bands and relative strength index Parameters
-volatility_days: null
+volatility_hours: null
 bb_upper_band: null
 bb_lower_band: null
 rsi_upper_threshold: null

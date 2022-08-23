@@ -39,7 +39,7 @@ class BollingerBandsStrategy(StrategyPyBase):
                     order_amount: Decimal,
                     market_infos: Dict[str, MarketTradingPairTuple],
                     base_amount_percentage: Decimal = Decimal(20.0),
-                    volatility_days: int = 100,
+                    volatility_hours: int = 100,
                     bb_upper_band: Decimal = Decimal('3'),
                     bb_lower_band: Decimal = Decimal('3'),
                     rsi_upper_threshold: Decimal = Decimal('70'),
@@ -51,7 +51,7 @@ class BollingerBandsStrategy(StrategyPyBase):
         self._order_amount = order_amount
         self._market_infos = market_infos
         self._base_amount_percentage = base_amount_percentage
-        self._candle_days = volatility_days
+        self._candle_hours = volatility_hours
         self._bb_upper_band = bb_upper_band
         self._bb_lower_band = bb_lower_band
         self._rsi_upper_threshold = rsi_upper_threshold
@@ -83,7 +83,7 @@ class BollingerBandsStrategy(StrategyPyBase):
         try:
             market = list(self._market_infos.keys())[0]
             exchange = self._market_infos[market]
-            exchange.get_historical(market, self._candle_days)
+            exchange.get_historical(market, self._candle_hours)
             self._candlesExchange = exchange
         except NotImplementedError:
             self.logger().warning(
@@ -171,11 +171,11 @@ class BollingerBandsStrategy(StrategyPyBase):
         Check if the strategy is ready to trade after all historical candles are retrieved
         :return: True if the strategy is ready to trade, False otherwise
         """
-        candles = [True for candles in self._candles.values() if len(candles) == self._candle_days]
+        candles = [True for candles in self._candles.values() if len(candles) == self._candle_hours]
 
         candles = []
         for candles in self._candles.values():
-            if len(candles) == self._candle_days:
+            if len(candles) == self._candle_hours:
                 candles.append(True)
 
         return len(candles) == len(self._market_infos)
@@ -501,7 +501,7 @@ class BollingerBandsStrategy(StrategyPyBase):
 
     def update_klines_data(self):
         for market, _ in self._market_infos.items():
-            self._candles[market] = self._candlesExchange.get_historical(market, self._candle_days)
+            self._candles[market] = self._candlesExchange.get_historical(market, self._candle_hours)
 
     def update_bollinger_bands(self):
         """
@@ -516,7 +516,7 @@ class BollingerBandsStrategy(StrategyPyBase):
             self._bolinger_bands[market] = BollingerBands(std_dev=stdev,
                                                           upper_band=upper_band,
                                                           lower_band=lower_band,
-                                                          volatility_days=self._candle_days
+                                                          volatility_hours=self._candle_hours
                                                           )
 
     def update_rsi(self):
@@ -533,13 +533,13 @@ class BollingerBandsStrategy(StrategyPyBase):
             ups = close_prices_delta.clip(lower=0)
             downs = close_prices_delta.clip(upper=0) * -1
 
-            ma_up = ups.rolling(window=self._candle_days - 1).mean()
-            ma_down = downs.rolling(window=self._candle_days - 1).mean()
+            ma_up = ups.rolling(window=self._candle_hours - 1).mean()
+            ma_down = downs.rolling(window=self._candle_hours - 1).mean()
 
             rsi = ma_up / ma_down
             rsi = 100 - (100 / (1 + rsi))
 
-            self._rsi[market] = rsi[self._candle_days - 1]
+            self._rsi[market] = rsi[self._candle_hours - 1]
 
     def notify_hb_app(self, msg: str):
         """

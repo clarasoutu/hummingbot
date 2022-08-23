@@ -104,9 +104,9 @@ bollinger_bands_config_map = {
                   validator=lambda v: validate_decimal(v, 1, 100, inclusive=True),
                   default=Decimal("50"),
                   prompt_on_new=True),
-    "volatility_days":
-        ConfigVar(key="volatility_days",
-                  prompt="Enter amount of daily candles that will be used to calculate the volatility >>> ",
+    "volatility_hours":
+        ConfigVar(key="volatility_hours",
+                  prompt="Enter amount of hourly candles that will be used to calculate the volatility >>> ",
                   type_str="int",
                   validator=lambda v: validate_decimal(v, 5, 600),
                   prompt_on_new=True,

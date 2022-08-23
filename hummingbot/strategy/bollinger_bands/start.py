@@ -11,7 +11,7 @@ def start(self):
         exchange = c_map.get("exchange").value.lower()
         markets = [market.strip() for market in c_map.get("markets").value.split(",")]
         order_amount = c_map.get("order_amount").value
-        volatility_days = c_map.get("volatility_days").value
+        volatility_hours = c_map.get("volatility_hours").value
         bb_upper_band = c_map.get("bb_upper_band").value
         bb_lower_band = c_map.get("bb_lower_band").value
         rsi_upper_threshold = c_map.get("rsi_upper_threshold").value
@@ -33,7 +33,7 @@ def start(self):
             order_amount=order_amount,
             market_infos=market_infos,
             base_amount_percentage=base_amount_percentage,
-            volatility_days=volatility_days,
+            volatility_hours=volatility_hours,
             bb_upper_band=Decimal(bb_upper_band),
             bb_lower_band=Decimal(bb_lower_band),
             rsi_upper_threshold=Decimal(rsi_upper_threshold),

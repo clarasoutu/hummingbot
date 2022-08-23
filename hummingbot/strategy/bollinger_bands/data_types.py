@@ -13,12 +13,12 @@ class BollingerBands(NamedTuple):
     Bollinger Bands data type.
     """
     std_dev: Decimal
-    volatility_days: int
+    volatility_hours: int
     upper_band: Decimal
     lower_band: Decimal
 
     def __str__(self):
-        return f"std_dev: {self.std_dev} volatility_days: {self.volatility_days} \
+        return f"std_dev: {self.std_dev} volatility_hours: {self.volatility_hours} \
                 upper_band: {self.upper_band} lower_band: {self.lower_band}"
 
 
