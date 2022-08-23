@@ -79,9 +79,9 @@ async def get_current_server_time(
 
 async def fetch_historical_candles(
         trading_pair: str,
-        days: int = 30,
+        hours: int = 30,
         throttler: Optional[AsyncThrottler] = None,
-        interval: str = "1d",
+        interval: str = "1h",
         domain: str = CONSTANTS.DEFAULT_DOMAIN
 ) -> List[Candle]:
     """
@@ -97,7 +97,7 @@ async def fetch_historical_candles(
             symbol=trading_pair,
             interval=interval,
             # https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md#enum-definitions
-            limit=days
+            limit=hours
         ),
         throttler_limit_id=CONSTANTS.KLINES_PATH_URL,
     )
@@ -106,4 +106,5 @@ async def fetch_historical_candles(
                                           high=Decimal(candle[2]),
                                           low=Decimal(candle[3]),
                                           close=Decimal(candle[4]),
-                                          volume=Decimal(candle[5])), candles))
+                                          volume=Decimal(candle[5]),
+                                          trades=int(candle[8])), candles))

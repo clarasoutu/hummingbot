@@ -10,6 +10,7 @@ class Candle(NamedTuple):
     low: Decimal
     close: Decimal
     volume: Decimal
+    trades: int
 
 
 class OrderType(Enum):

@@ -258,12 +258,18 @@ class BinanceExchange(ExchangePyBase):
         """
         pass
 
-    async def _fetch_historical_candles(self: object, trading_pair: str, days: int):
+    async def _fetch_historical_candles(self: object, trading_pair: str, hours: int):
         symbol = await self.exchange_symbol_associated_to_pair(trading_pair=trading_pair)
-        self._candles[trading_pair] = await web_utils.fetch_historical_candles(symbol, days)
+        self._candles[trading_pair] = await web_utils.fetch_historical_candles(symbol, hours)
 
-    def get_historical(self, trading_pair: str, days: int) -> List[Candle]:
-        safe_ensure_future(self._fetch_historical_candles(trading_pair, days))
+    def get_historical(self, trading_pair: str, hours: int) -> List[Candle]:
+        """
+        Get historical candles for the given trading pair in the given number of hours.
+        :param trading_pair:
+        :param hours:
+        :return:
+        """
+        safe_ensure_future(self._fetch_historical_candles(trading_pair, hours))
         self.logger().debug(
             f"{self._candles}"
         )
