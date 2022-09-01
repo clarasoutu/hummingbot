@@ -50,5 +50,5 @@ class MarketTradingPairTuple(NamedTuple):
     def order_book_ask_entries(self) -> Iterator[ClientOrderBookRow]:
         return self.market.order_book_ask_entries(self.trading_pair)
 
-    def get_historical(self, hours: int) -> List[Candle]:
-        return self.market.get_historical(self.trading_pair, hours)
+    def get_historical(self, trading_pair: str, hours: int) -> List[Candle]:
+        return self.market.get_historical(trading_pair, hours)

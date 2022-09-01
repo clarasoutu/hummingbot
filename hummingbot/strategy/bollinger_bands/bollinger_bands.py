@@ -173,11 +173,6 @@ class BollingerBandsStrategy(StrategyPyBase):
         """
         candles = [True for candles in self._candles.values() if len(candles) == self._candle_hours]
 
-        candles = []
-        for candles in self._candles.values():
-            if len(candles) == self._candle_hours:
-                candles.append(True)
-
         return len(candles) == len(self._market_infos)
 
     def base_order_size(self, trading_pair: str, price: Decimal = s_decimal_zero):

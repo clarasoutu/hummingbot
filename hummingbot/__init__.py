@@ -11,7 +11,6 @@ from hummingbot.logger.struct_logger import StructLogger, StructLogRecord
 if TYPE_CHECKING:
     from hummingbot.client.config.config_helpers import ClientConfigAdapter as _ClientConfigAdapter
 
-
 STRUCT_LOGGER_SET = False
 DEV_STRATEGY_PREFIX = "dev"
 _prefix_path = None

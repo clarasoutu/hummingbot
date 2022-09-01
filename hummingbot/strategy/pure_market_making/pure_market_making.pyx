@@ -28,10 +28,12 @@ from .inventory_skew_calculator import calculate_total_order_size
 from .pure_market_making_order_tracker import PureMarketMakingOrderTracker
 from .moving_price_band import MovingPriceBand
 
+
 NaN = float("nan")
 s_decimal_zero = Decimal(0)
 s_decimal_neg_one = Decimal(-1)
 pmm_logger = None
+
 
 cdef class PureMarketMakingStrategy(StrategyBase):
     OPTION_LOG_CREATE_ORDER = 1 << 3
@@ -125,9 +127,9 @@ cdef class PureMarketMakingStrategy(StrategyBase):
         self._ping_pong_warning_lines = []
         self._hb_app_notification = hb_app_notification
         self._order_override = order_override
-        self._split_order_levels_enabled = split_order_levels_enabled
-        self._bid_order_level_spreads = bid_order_level_spreads
-        self._ask_order_level_spreads = ask_order_level_spreads
+        self._split_order_levels_enabled=split_order_levels_enabled
+        self._bid_order_level_spreads=bid_order_level_spreads
+        self._ask_order_level_spreads=ask_order_level_spreads
         self._cancel_timestamp = 0
         self._create_timestamp = 0
         self._limit_order_type = self._market_info.market.get_maker_order_type()
@@ -467,8 +469,7 @@ cdef class PureMarketMakingStrategy(StrategyBase):
 
     @property
     def active_non_hanging_orders(self) -> List[LimitOrder]:
-        orders = [o for o in self.active_orders if
-                  not self._hanging_orders_tracker.is_order_id_in_hanging_orders(o.client_order_id)]
+        orders = [o for o in self.active_orders if not self._hanging_orders_tracker.is_order_id_in_hanging_orders(o.client_order_id)]
         return orders
 
     @property
@@ -567,7 +568,7 @@ cdef class PureMarketMakingStrategy(StrategyBase):
         total_in_quote = base_value + quote_balance
         base_ratio = base_value / total_in_quote if total_in_quote > 0 else 0
         quote_ratio = quote_balance / total_in_quote if total_in_quote > 0 else 0
-        data = [
+        data=[
             ["", base_asset, quote_asset],
             ["Total Balance", round(base_balance, 4), round(quote_balance, 4)],
             ["Available Balance", round(available_base_balance, 4), round(available_quote_balance, 4)],
@@ -598,7 +599,7 @@ cdef class PureMarketMakingStrategy(StrategyBase):
                 else:
                     level = no_sells - lvl_sell
                     lvl_sell += 1
-            spread = 0 if price == 0 else abs(order.price - price) / price
+            spread = 0 if price == 0 else abs(order.price - price)/price
             age = pd.Timestamp(order_age(order, self._current_timestamp), unit='s').strftime('%H:%M:%S')
 
             if is_hanging_order:
@@ -640,9 +641,9 @@ cdef class PureMarketMakingStrategy(StrategyBase):
             elif market == self._market_info.market and self._asset_price_delegate is None:
                 ref_price = self.get_price()
             elif (
-                    self._asset_price_delegate is not None
-                    and market == self._asset_price_delegate.market
-                    and self._price_type is not PriceType.LastOwnTrade
+                self._asset_price_delegate is not None
+                and market == self._asset_price_delegate.market
+                and self._price_type is not PriceType.LastOwnTrade
             ):
                 ref_price = self._asset_price_delegate.get_price_by_type(self._price_type)
             markets_data.append([
@@ -724,8 +725,8 @@ cdef class PureMarketMakingStrategy(StrategyBase):
         StrategyBase.c_tick(self, timestamp)
 
         cdef:
-            int64_t current_tick = <int64_t> (timestamp // self._status_report_interval)
-            int64_t last_tick = <int64_t> (self._last_timestamp // self._status_report_interval)
+            int64_t current_tick = <int64_t>(timestamp // self._status_report_interval)
+            int64_t last_tick = <int64_t>(self._last_timestamp // self._status_report_interval)
             bint should_report_warnings = ((current_tick > last_tick) and
                                            (self._logging_options & self.OPTION_LOG_STATUS_REPORT))
             cdef object proposal
@@ -820,8 +821,7 @@ cdef class PureMarketMakingStrategy(StrategyBase):
                         buys.append(PriceSize(price, size))
             if not sell_reference_price.is_nan():
                 for level in range(0, self._sell_levels):
-                    price = sell_reference_price * (
-                                Decimal("1") + self._ask_spread + (level * self._order_level_spread))
+                    price = sell_reference_price * (Decimal("1") + self._ask_spread + (level * self._order_level_spread))
                     price = market.c_quantize_order_price(self.trading_pair, price)
                     size = self._order_amount + (self._order_level_amount * level)
                     size = market.c_quantize_order_amount(self.trading_pair, size)
@@ -1016,16 +1016,15 @@ cdef class PureMarketMakingStrategy(StrategyBase):
 
             # If the price_above_bid is lower than the price suggested by the top pricing proposal,
             # lower the price and from there apply the order_level_spread to each order in the next levels
-            proposal.buys = sorted(proposal.buys, key=lambda p: p.price, reverse=True)
+            proposal.buys = sorted(proposal.buys, key = lambda p: p.price, reverse = True)
             lower_buy_price = min(proposal.buys[0].price, price_above_bid)
             for i, proposed in enumerate(proposal.buys):
                 if self._split_order_levels_enabled:
                     proposal.buys[i].price = (market.c_quantize_order_price(self.trading_pair, lower_buy_price)
                                               * (1 - self._bid_order_level_spreads[i] / Decimal("100"))
-                                              / (1 - self._bid_order_level_spreads[0] / Decimal("100")))
+                                              / (1-self._bid_order_level_spreads[0] / Decimal("100")))
                     continue
-                proposal.buys[i].price = market.c_quantize_order_price(self.trading_pair, lower_buy_price) * (
-                            1 - self.order_level_spread * i)
+                proposal.buys[i].price = market.c_quantize_order_price(self.trading_pair, lower_buy_price) * (1 - self.order_level_spread * i)
 
         if len(proposal.sells) > 0:
             # Get the top ask price in the market using order_optimization_depth and your sell order volume
@@ -1040,7 +1039,7 @@ cdef class PureMarketMakingStrategy(StrategyBase):
 
             # If the price_below_ask is higher than the price suggested by the pricing proposal,
             # increase your price and from there apply the order_level_spread to each order in the next levels
-            proposal.sells = sorted(proposal.sells, key=lambda p: p.price)
+            proposal.sells = sorted(proposal.sells, key = lambda p: p.price)
             higher_sell_price = max(proposal.sells[0].price, price_below_ask)
             for i, proposed in enumerate(proposal.sells):
                 if self._split_order_levels_enabled:
@@ -1048,8 +1047,7 @@ cdef class PureMarketMakingStrategy(StrategyBase):
                                                * (1 + self._ask_order_level_spreads[i] / Decimal("100"))
                                                / (1 + self._ask_order_level_spreads[0] / Decimal("100")))
                     continue
-                proposal.sells[i].price = market.c_quantize_order_price(self.trading_pair, higher_sell_price) * (
-                            1 + self.order_level_spread * i)
+                proposal.sells[i].price = market.c_quantize_order_price(self.trading_pair, higher_sell_price) * (1 + self.order_level_spread * i)
 
     cdef object c_apply_add_transaction_costs(self, object proposal):
         cdef:
@@ -1181,7 +1179,7 @@ cdef class PureMarketMakingStrategy(StrategyBase):
         proposal_prices = sorted(proposal_prices)
         for current, proposal in zip(current_prices, proposal_prices):
             # if spread diff is more than the tolerance or order quantities are different, return false.
-            if abs(proposal - current) / current > self._order_refresh_tolerance_pct:
+            if abs(proposal - current)/current > self._order_refresh_tolerance_pct:
                 return False
         return True
 
@@ -1248,7 +1246,7 @@ cdef class PureMarketMakingStrategy(StrategyBase):
 
     cdef bint c_to_create_orders(self, object proposal):
         non_hanging_orders_non_cancelled = [o for o in self.active_non_hanging_orders if not
-        self._hanging_orders_tracker.is_potential_hanging_order(o)]
+                                            self._hanging_orders_tracker.is_potential_hanging_order(o)]
         return (self._create_timestamp < self._current_timestamp
                 and (not self._should_wait_order_cancel_confirmation or
                      len(self._sb_order_tracker.in_flight_cancels) == 0)

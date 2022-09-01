@@ -10,10 +10,10 @@ echo "ℹ️  Press [ENTER] for default values:"
 echo
 
 # Specify hummingbot version
-read -p "   Enter Hummingbot version you want to use [latest/development] (default = \"latest\") >>> " TAG
+read -p "   Enter Hummingbot version you want to use [latest/development] (default = \"bb-rsi-1.0.0\") >>> " TAG
 if [ "$TAG" == "" ]
 then
-  TAG="latest"
+  TAG="bb-rsi-1.0.0"
 fi
 
 # Ask the user for the name of the new instance
@@ -107,7 +107,7 @@ create_instance () {
  -e CERTS_FOLDER="$CERTS_FOLDER" \
  -e GATEWAY_LOGS_FOLDER="$GATEWAY_LOGS_FOLDER" \
  -e GATEWAY_CONF_FOLDER="$GATEWAY_CONF_FOLDER" \
- hummingbot/hummingbot:$TAG
+ clarasou/hummingbot:$TAG
 }
 
 prompt_proceed

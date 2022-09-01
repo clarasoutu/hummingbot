@@ -6,7 +6,7 @@ from bidict import bidict
 
 from hummingbot.connector.budget_checker import BudgetChecker
 from hummingbot.connector.connector_base import ConnectorBase
-from hummingbot.core.data_type.common import OrderType, PriceType, TradeType, Candle
+from hummingbot.core.data_type.common import OrderType, PriceType, TradeType
 from hummingbot.core.data_type.limit_order import LimitOrder
 from hummingbot.core.data_type.order_book import OrderBook
 from hummingbot.core.data_type.order_book_query_result import ClientOrderBookQueryResult, OrderBookQueryResult
@@ -260,6 +260,9 @@ cdef class ExchangeBase(ConnectorBase):
 
     def get_vwap_for_volume(self, trading_pair: str, is_buy: bool, volume: Decimal):
         return self.c_get_vwap_for_volume(trading_pair, is_buy, volume)
+
+    def get_price_for_quote_volume(self, trading_pair: str, is_buy: bool, volume: Decimal):
+        return self.c_get_price_for_quote_volume(trading_pair, is_buy, volume)
 
     def get_price_for_volume(self, trading_pair: str, is_buy: bool, volume: Decimal):
         return self.c_get_price_for_volume(trading_pair, is_buy, volume)
