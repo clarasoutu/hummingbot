@@ -114,3 +114,5 @@ coverage.xml
 
 # backup conf
 /conf_backup
+
+logs/*

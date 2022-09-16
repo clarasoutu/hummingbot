@@ -1,0 +1,875 @@
+2022-09-13 00:31:44,927 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - binance_PaperTrade does not support historical data. Falling back to Binance.
+2022-09-13 00:31:44,929 - 95497 - hummingbot.client.hummingbot_application - INFO - start command initiated.
+2022-09-13 00:31:44,944 - 95497 - hummingbot.core.network_iterator - INFO - Network status has changed to NetworkStatus.CONNECTED. Starting networking...
+2022-09-13 00:31:45,001 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - Historical data not yet obtained. Please wait...
+2022-09-13 00:31:45,001 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - BTC-USDT historical data not yet ready...
+2022-09-13 00:31:45,001 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - ETH-USDT historical data not yet ready...
+2022-09-13 00:31:45,001 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - BNB-USDT historical data not yet ready...
+2022-09-13 00:31:45,001 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - XRP-USDT historical data not yet ready...
+2022-09-13 00:31:45,001 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - ADA-USDT historical data not yet ready...
+2022-09-13 00:31:46,005 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - Historical data not yet obtained. Please wait...
+2022-09-13 00:31:46,005 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - BTC-USDT historical data not yet ready...
+2022-09-13 00:31:46,005 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - ETH-USDT historical data not yet ready...
+2022-09-13 00:31:46,006 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - BNB-USDT historical data not yet ready...
+2022-09-13 00:31:46,006 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - XRP-USDT historical data not yet ready...
+2022-09-13 00:31:46,006 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - WARNING - ADA-USDT historical data not yet ready...
+2022-09-13 00:31:46,825 - 95497 - hummingbot.connector.exchange.binance.binance_api_order_book_data_source.BinanceAPIOrderBookDataSource - INFO - Subscribed to public order book and trade channels...
+2022-09-13 00:31:47,005 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - Historical data not yet obtained. Please wait...
+2022-09-13 00:31:47,013 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for BTC-USDT
+2022-09-13 00:31:47,021 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for ETH-USDT
+2022-09-13 00:31:47,027 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for BNB-USDT
+2022-09-13 00:31:47,033 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for XRP-USDT
+2022-09-13 00:31:47,039 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for ADA-USDT
+2022-09-13 00:31:47,076 - 95497 - hummingbot.core.data_type.order_book_tracker - INFO - Initialized order book for BTC-USDT. 1/5 completed.
+2022-09-13 00:31:48,000 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - binance is not ready. Please wait...
+2022-09-13 00:31:48,395 - 95497 - hummingbot.core.data_type.order_book_tracker - INFO - Initialized order book for ETH-USDT. 2/5 completed.
+2022-09-13 00:31:49,005 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - binance is not ready. Please wait...
+2022-09-13 00:31:49,655 - 95497 - hummingbot.core.data_type.order_book_tracker - INFO - Initialized order book for BNB-USDT. 3/5 completed.
+2022-09-13 00:31:50,000 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - binance is not ready. Please wait...
+2022-09-13 00:31:50,945 - 95497 - hummingbot.core.data_type.order_book_tracker - INFO - Initialized order book for XRP-USDT. 4/5 completed.
+2022-09-13 00:31:51,000 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - binance is not ready. Please wait...
+2022-09-13 00:31:52,001 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - binance is not ready. Please wait...
+2022-09-13 00:31:52,202 - 95497 - hummingbot.core.data_type.order_book_tracker - INFO - Initialized order book for ADA-USDT. 5/5 completed.
+2022-09-13 00:31:53,000 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - WARNING - binance is not ready. Please wait...
+2022-09-13 00:31:54,003 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - Strategy and exchange are ready. Allocating budgets and kicking off trading
+2022-09-13 00:31:54,009 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - BUY Budget allocation: {'BTC-USDT': Decimal('569283.0620000000'), 'ETH-USDT': Decimal('574522.1720000000'), 'BNB-USDT': Decimal('0'), 'XRP-USDT': Decimal('591564.9220000000'), 'ADA-USDT': Decimal('591564.9220000000')}
+2022-09-13 00:31:54,010 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - SELL Budget allocation: {'BTC-USDT': Decimal('1'), 'ETH-USDT': Decimal('10'), 'BNB-USDT': Decimal('10000'), 'XRP-USDT': Decimal('0'), 'ADA-USDT': Decimal('0')}
+2022-09-13 00:31:54,021 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for BTC-USDT
+2022-09-13 00:31:54,031 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for ETH-USDT
+2022-09-13 00:31:54,039 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for BNB-USDT
+2022-09-13 00:31:54,046 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for XRP-USDT
+2022-09-13 00:31:54,053 - 95497 - hummingbot.connector.exchange.binance.binance_exchange.BinanceExchange - NETWORK - Retrieved 480 candles for ADA-USDT
+2022-09-13 00:31:54,071 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - Bollinger bands: {'BTC-USDT': BollingerBands(std_dev=Decimal('889.4960069958633035748525830'), volatility_hours=480, upper_band=Decimal('20395.30041840329196636908186'), lower_band=Decimal('20377.51049826337470029758480')), 'ETH-USDT': BollingerBands(std_dev=Decimal('85.93258555167755075497074075'), volatility_hours=480, upper_band=Decimal('1608.464659188850108840883040'), lower_band=Decimal('1606.746007477816557825783626')), 'BNB-USDT': BollingerBands(std_dev=Decimal('9.437990658345377583578148052'), volatility_hours=480, upper_band=Decimal('284.2187549065834537758357815'), lower_band=Decimal('284.0299950934165462241642185')), 'XRP-USDT': BollingerBands(std_dev=Decimal('0.01106054782184616113462806878'), volatility_hours=480, upper_band=Decimal('0.3372453971448851282780129474'), lower_band=Decimal('0.3370241861884482050553203860')), 'ADA-USDT': BollingerBands(std_dev=Decimal('0.02437103057181964657852252010'), volatility_hours=480, upper_band=Decimal('0.4722143353057181964657852252'), lower_band=Decimal('0.4717269146942818035342147748'))}
+2022-09-13 00:31:54,111 - 95497 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2022-09-13 00:31:54,126 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - RSIs: {'BTC-USDT': 51.05229499304683, 'ETH-USDT': 50.46125045911778, 'BNB-USDT': 49.27953890489914, 'XRP-USDT': 50.62351127924898, 'ADA-USDT': 51.46030759670654}
+2022-09-13 00:31:54,127 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (BTC-USDT) Creating a bid order [ p: 20377.5100000000 s: 0.0049024 ] value: 99.90 USDT 
+2022-09-13 00:31:54,128 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - Buy price 20395.3000000000 is below the mid price 22281.8600000000
+2022-09-13 00:31:54,128 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (BTC-USDT) Creating an ask order at [ p: 22281.8600000000 s: 0.0049030 ] value: 109.25 USDT 
+2022-09-13 00:31:54,128 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (ETH-USDT) Creating a bid order [ p: 1606.7460000000 s: 0.0621754 ] value: 99.90 USDT 
+2022-09-13 00:31:54,128 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - Buy price 1608.4650000000 is below the mid price 1704.2750000000
+2022-09-13 00:31:54,128 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (ETH-USDT) Creating an ask order at [ p: 1704.2750000000 s: 0.0621710 ] value: 105.96 USDT 
+2022-09-13 00:31:54,128 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (BNB-USDT) Creating a bid order [ p: 284.0300000000 s: 0.3517238 ] value: 99.90 USDT 
+2022-09-13 00:31:54,129 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - Buy price 284.2188000000 is below the mid price 291.8500000000
+2022-09-13 00:31:54,129 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (BNB-USDT) Creating an ask order at [ p: 291.8500000000 s: 0.3518416 ] value: 102.68 USDT 
+2022-09-13 00:31:54,129 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (XRP-USDT) Creating a bid order [ p: 0.3370242000 s: 296.4182000 ] value: 99.90 USDT 
+2022-09-13 00:31:54,129 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (ADA-USDT) Creating a bid order [ p: 0.4717269000 s: 211.7753000 ] value: 99.90 USDT 
+2022-09-13 00:31:54,137 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "order_id": "sell://BNB-USDT/1631759c6f08172d7fbc7fe404", "trading_pair": "BNB-USDT", "trade_type": "TradeType.SELL", "order_type": "OrderType.LIMIT", "price": "291.8500000000", "amount": "0.3518416", "trade_fee": {"percent": "0.001", "percent_token": null, "flat_fees": []}, "exchange_trade_id": "1663021914137547", "leverage": 1, "position": "NIL", "event_name": "OrderFilledEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,138 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (BNB-USDT) Maker SELL order (price: 291.8500000000) of 0.3518416 BNB is filled. [clock=2022-09-12 22:31:54+00:00]
+2022-09-13 00:31:54,150 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "order_id": "sell://BNB-USDT/1631759c6f08172d7fbc7fe404", "base_asset": "BNB", "quote_asset": "USDT", "base_asset_amount": "0.3518416", "quote_asset_amount": "102.58228598904000000000", "order_type": "OrderType.LIMIT", "exchange_order_id": null, "event_name": "SellOrderCompletedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,151 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "order_id": "sell://BTC-USDT/cb8cd218459e603b351187c97a", "trading_pair": "BTC-USDT", "trade_type": "TradeType.SELL", "order_type": "OrderType.LIMIT", "price": "22281.8600000000", "amount": "0.0049030", "trade_fee": {"percent": "0.001", "percent_token": null, "flat_fees": []}, "exchange_trade_id": "1663021914151113", "leverage": 1, "position": "NIL", "event_name": "OrderFilledEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,151 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (BTC-USDT) Maker SELL order (price: 22281.8600000000) of 0.0049030 BTC is filled. [clock=2022-09-12 22:31:54+00:00]
+2022-09-13 00:31:54,160 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "order_id": "sell://BTC-USDT/cb8cd218459e603b351187c97a", "base_asset": "BTC", "quote_asset": "USDT", "base_asset_amount": "0.0049030", "quote_asset_amount": "109.13871162042000000000", "order_type": "OrderType.LIMIT", "exchange_order_id": null, "event_name": "SellOrderCompletedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,183 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "type": "OrderType.LIMIT", "trading_pair": "BTC-USDT", "amount": "0.0049024", "price": "20377.5100000000", "order_id": "buy://BTC-USDT/9bb30ea39690fd3498f41fb685", "creation_timestamp": 1663021914.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "BuyOrderCreatedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,186 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "type": "OrderType.LIMIT", "trading_pair": "BTC-USDT", "amount": "0.0049030", "price": "22281.8600000000", "order_id": "sell://BTC-USDT/cb8cd218459e603b351187c97a", "creation_timestamp": 1663021914.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "SellOrderCreatedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,188 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "type": "OrderType.LIMIT", "trading_pair": "ETH-USDT", "amount": "0.0621754", "price": "1606.7460000000", "order_id": "buy://ETH-USDT/47a63a23843447e8e4aeb154c6", "creation_timestamp": 1663021914.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "BuyOrderCreatedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,190 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "type": "OrderType.LIMIT", "trading_pair": "ETH-USDT", "amount": "0.0621710", "price": "1704.2750000000", "order_id": "sell://ETH-USDT/8787b0ed2107e0c1f8405e9981", "creation_timestamp": 1663021914.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "SellOrderCreatedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,191 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "type": "OrderType.LIMIT", "trading_pair": "BNB-USDT", "amount": "0.3517238", "price": "284.0300000000", "order_id": "buy://BNB-USDT/db00c51e0d0a7b0e7db4fb9411", "creation_timestamp": 1663021914.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "BuyOrderCreatedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,193 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "type": "OrderType.LIMIT", "trading_pair": "BNB-USDT", "amount": "0.3518416", "price": "291.8500000000", "order_id": "sell://BNB-USDT/1631759c6f08172d7fbc7fe404", "creation_timestamp": 1663021914.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "SellOrderCreatedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,195 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "type": "OrderType.LIMIT", "trading_pair": "XRP-USDT", "amount": "296.4182000", "price": "0.3370242000", "order_id": "buy://XRP-USDT/87ee35262a7819823c17f9d546", "creation_timestamp": 1663021914.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "BuyOrderCreatedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,197 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "type": "OrderType.LIMIT", "trading_pair": "ADA-USDT", "amount": "211.7753000", "price": "0.4717269000", "order_id": "buy://ADA-USDT/aff121fc70927b3873bc5f3f9d", "creation_timestamp": 1663021914.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "BuyOrderCreatedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,219 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "order_id": "sell://ETH-USDT/8787b0ed2107e0c1f8405e9981", "trading_pair": "ETH-USDT", "trade_type": "TradeType.SELL", "order_type": "OrderType.LIMIT", "price": "1704.2750000000", "amount": "0.0621710", "trade_fee": {"percent": "0.001", "percent_token": null, "flat_fees": []}, "exchange_trade_id": "1663021914219012", "leverage": 1, "position": "NIL", "event_name": "OrderFilledEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,219 - 95497 - hummingbot.strategy.rsi_bb.rsi_bb - INFO - (ETH-USDT) Maker SELL order (price: 1704.2750000000) of 0.0621710 ETH is filled. [clock=2022-09-12 22:31:54+00:00]
+2022-09-13 00:31:54,228 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021914.0, "order_id": "sell://ETH-USDT/8787b0ed2107e0c1f8405e9981", "base_asset": "ETH", "quote_asset": "USDT", "base_asset_amount": "0.0621710", "quote_asset_amount": "105.85052454397500000000", "order_type": "OrderType.LIMIT", "exchange_order_id": null, "event_name": "SellOrderCompletedEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:31:54,750 - 95497 - hummingbot.core.rate_oracle.rate_oracle - INFO - Network status has changed to NetworkStatus.CONNECTED. Starting networking...
+2022-09-13 00:32:21,941 - 95497 - hummingbot.client.hummingbot_application - INFO - stop command initiated.
+2022-09-13 00:32:21,949 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021941.0, "order_id": "buy://BTC-USDT/9bb30ea39690fd3498f41fb685", "exchange_order_id": null, "event_name": "OrderCancelledEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:32:21,954 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021941.0, "order_id": "buy://ETH-USDT/47a63a23843447e8e4aeb154c6", "exchange_order_id": null, "event_name": "OrderCancelledEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:32:21,958 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021941.0, "order_id": "buy://BNB-USDT/db00c51e0d0a7b0e7db4fb9411", "exchange_order_id": null, "event_name": "OrderCancelledEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:32:21,961 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021941.0, "order_id": "buy://XRP-USDT/87ee35262a7819823c17f9d546", "exchange_order_id": null, "event_name": "OrderCancelledEvent", "event_source": "None_PaperTrade"}
+2022-09-13 00:32:21,965 - 95497 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1663021941.0, "order_id": "buy://ADA-USDT/aff121fc70927b3873bc5f3f9d", "exchange_order_id": null, "event_name": "OrderCancelledEvent", "event_source": "None_PaperTrade"}
+2022-09-13 07:35:30,814 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 544, in _request
+    await resp.start(conn)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client_reqrep.py", line 905, in start
+    self._continue = None
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/helpers.py", line 656, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+2022-09-13 07:35:30,819 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 07:50:07,712 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 07:50:07,719 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 08:07:02,977 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 08:07:02,980 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 08:22:18,940 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 08:22:18,947 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 08:34:04,467 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 08:34:04,474 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 08:49:19,100 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 08:49:19,104 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 08:50:57,905 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 08:50:57,908 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 09:03:44,081 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 09:03:44,086 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 09:04:44,093 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 09:04:44,098 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 09:05:44,106 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 09:05:44,112 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 09:06:44,121 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 09:06:44,126 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 09:07:44,129 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 09:07:44,133 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 09:08:44,188 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 969, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 1050, in create_connection
+    transport, protocol = await self._create_connection_transport(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 1080, in _create_connection_transport
+    await waiter
+ConnectionResetError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1051, in _create_direct_connection
+    raise last_exc
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1020, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 975, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [None]
+2022-09-13 09:08:44,193 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 10:18:11,332 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 544, in _request
+    await resp.start(conn)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client_reqrep.py", line 905, in start
+    self._continue = None
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/helpers.py", line 656, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+2022-09-13 10:18:11,336 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 14:10:12,877 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 14:10:12,883 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 14:43:49,314 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 14:43:49,317 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 15:14:11,325 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 15:14:11,329 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 15:44:05,016 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 15:44:05,021 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 16:14:08,537 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 969, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 1050, in create_connection
+    transport, protocol = await self._create_connection_transport(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 1080, in _create_connection_transport
+    await waiter
+ConnectionResetError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1051, in _create_direct_connection
+    raise last_exc
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1020, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 975, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [None]
+2022-09-13 16:14:08,538 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 16:46:19,263 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 16:46:19,269 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 17:19:18,017 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 969, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 1050, in create_connection
+    transport, protocol = await self._create_connection_transport(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 1080, in _create_connection_transport
+    await waiter
+ConnectionResetError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1051, in _create_direct_connection
+    raise last_exc
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1020, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 975, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [None]
+2022-09-13 17:19:18,019 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 18:10:04,667 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 18:10:04,672 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 18:41:14,769 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 18:41:14,772 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.
+2022-09-13 18:59:08,077 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - NETWORK - Error getting Digifinex server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/time_patcher.py", line 96, in update_server_time_offset
+    server_time = await query_time_func()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/digifinex/digifinex_auth.py", line 40, in query_time_func
+    async with session.get(Constants.REST_URL + '/time') as resp:
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host openapi.digifinex.com:443 ssl:default [nodename nor servname provided, or not known]
+2022-09-13 18:59:08,081 - 95497 - hummingbot.connector.exchange.digifinex.time_patcher - WARNING - Could not refresh Digifinex server time. Check network connection.

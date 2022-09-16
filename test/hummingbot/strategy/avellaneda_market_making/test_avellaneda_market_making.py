@@ -300,7 +300,7 @@ class AvellanedaMarketMakingUnitTests(unittest.TestCase):
         # 0.1% quantization of prices in the orderbook
         PRICE_STEP_FRACTION = 0.01
 
-        # Generate bollinger_bands quotes
+        # Generate rsi_bb quotes
         samples_mid = np.random.normal(original_price_mid, volatility * original_price_mid, samples)
         samples_spread = np.random.normal(original_spread, spread_stdev, samples)
 
@@ -310,7 +310,7 @@ class AvellanedaMarketMakingUnitTests(unittest.TestCase):
         samples_amount_bid = np.random.normal(original_amount, amount_stdev, samples)
         samples_amount_ask = np.random.normal(original_amount, amount_stdev, samples)
 
-        # A full orderbook is not necessary, only up to the bollinger_bands max deviation
+        # A full orderbook is not necessary, only up to the rsi_bb max deviation
         price_depth_max = max(max(samples_price_bid) - min(samples_price_bid), max(samples_price_ask) - min(samples_price_ask))
 
         bid_dfs = []
@@ -346,7 +346,7 @@ class AvellanedaMarketMakingUnitTests(unittest.TestCase):
     @staticmethod
     def make_trades(bids_df, asks_df):
         # Estimate market orders that happened
-        # Assume every movement in the bollinger_bands is caused by a market order and its size is the volume differential
+        # Assume every movement in the rsi_bb is caused by a market order and its size is the volume differential
 
         bid_df_prev = None
         ask_df_prev = None

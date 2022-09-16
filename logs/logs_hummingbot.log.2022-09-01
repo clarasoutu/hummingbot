@@ -1,0 +1,59 @@
+2022-09-01 22:36:43,253 - 23383 - hummingbot.core.utils.trading_pair_fetcher - ERROR - An error occurred when fetching trading pairs for ftx.Please check the logs
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/utils/trading_pair_fetcher.py", line 62, in fetch_all
+    self._fetch_pairs_from_connector_setting(connector_setting=conn_setting)
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/utils/trading_pair_fetcher.py", line 38, in _fetch_pairs_from_connector_setting
+    connector = connector_setting.non_trading_connector_instance_with_default_configuration()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/client/settings.py", line 238, in non_trading_connector_instance_with_default_configuration
+    connector_class = getattr(importlib.import_module(self.module_path()), self.class_name())
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1109, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "hummingbot/connector/exchange/ftx/ftx_exchange.pyx", line 24, in init hummingbot.connector.exchange.ftx.ftx_exchange
+    from hummingbot.connector.exchange.ftx.ftx_order_book_tracker import FtxOrderBookTracker
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/ftx/ftx_order_book_tracker.py", line 20, in <module>
+    from hummingbot.connector.exchange.ftx.ftx_order_book import FtxOrderBook
+  File "hummingbot/connector/exchange/ftx/ftx_order_book.pyx", line 18, in init hummingbot.connector.exchange.ftx.ftx_order_book
+    from hummingbot.connector.exchange.ftx.ftx_utils import convert_from_exchange_trading_pair
+ImportError: cannot import name convert_from_exchange_trading_pair
+2022-09-01 22:37:26,082 - 23383 - hummingbot.core.utils.async_utils - ERROR - Unhandled error in background task: [Errno 2] No such file or directory: '/Users/clarasoutullo/projects/hummingbot/hummingbot/templates/conf_rsi_bb_strategy_TEMPLATE.yml'
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/utils/async_utils.py", line 9, in safe_wrapper
+    return await c
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/client/command/create_command.py", line 65, in prompt_for_configuration
+    file_name = await self.prompt_for_configuration_legacy(file_name, strategy, config_map)
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/client/command/create_command.py", line 144, in prompt_for_configuration_legacy
+    shutil.copy(template, strategy_path)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/shutil.py", line 415, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/shutil.py", line 261, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/clarasoutullo/projects/hummingbot/hummingbot/templates/conf_rsi_bb_strategy_TEMPLATE.yml'
+2022-09-01 22:39:34,904 - 23561 - hummingbot.core.utils.trading_pair_fetcher - ERROR - An error occurred when fetching trading pairs for ftx.Please check the logs
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/utils/trading_pair_fetcher.py", line 62, in fetch_all
+    self._fetch_pairs_from_connector_setting(connector_setting=conn_setting)
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/utils/trading_pair_fetcher.py", line 38, in _fetch_pairs_from_connector_setting
+    connector = connector_setting.non_trading_connector_instance_with_default_configuration()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/client/settings.py", line 238, in non_trading_connector_instance_with_default_configuration
+    connector_class = getattr(importlib.import_module(self.module_path()), self.class_name())
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1109, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "hummingbot/connector/exchange/ftx/ftx_exchange.pyx", line 24, in init hummingbot.connector.exchange.ftx.ftx_exchange
+    from hummingbot.connector.exchange.ftx.ftx_order_book_tracker import FtxOrderBookTracker
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/ftx/ftx_order_book_tracker.py", line 20, in <module>
+    from hummingbot.connector.exchange.ftx.ftx_order_book import FtxOrderBook
+  File "hummingbot/connector/exchange/ftx/ftx_order_book.pyx", line 18, in init hummingbot.connector.exchange.ftx.ftx_order_book
+    from hummingbot.connector.exchange.ftx.ftx_utils import convert_from_exchange_trading_pair
+ImportError: cannot import name convert_from_exchange_trading_pair

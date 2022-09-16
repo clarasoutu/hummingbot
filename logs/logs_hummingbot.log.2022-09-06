@@ -1,0 +1,64 @@
+2022-09-06 23:57:41,604 - 58421 - hummingbot.core.utils.trading_pair_fetcher - ERROR - An error occurred when fetching trading pairs for ftx.Please check the logs
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/utils/trading_pair_fetcher.py", line 62, in fetch_all
+    self._fetch_pairs_from_connector_setting(connector_setting=conn_setting)
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/utils/trading_pair_fetcher.py", line 38, in _fetch_pairs_from_connector_setting
+    connector = connector_setting.non_trading_connector_instance_with_default_configuration()
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/client/settings.py", line 238, in non_trading_connector_instance_with_default_configuration
+    connector_class = getattr(importlib.import_module(self.module_path()), self.class_name())
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1109, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "hummingbot/connector/exchange/ftx/ftx_exchange.pyx", line 24, in init hummingbot.connector.exchange.ftx.ftx_exchange
+    from hummingbot.connector.exchange.ftx.ftx_order_book_tracker import FtxOrderBookTracker
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/ftx/ftx_order_book_tracker.py", line 20, in <module>
+    from hummingbot.connector.exchange.ftx.ftx_order_book import FtxOrderBook
+  File "hummingbot/connector/exchange/ftx/ftx_order_book.pyx", line 18, in init hummingbot.connector.exchange.ftx.ftx_order_book
+    from hummingbot.connector.exchange.ftx.ftx_utils import convert_from_exchange_trading_pair
+ImportError: cannot import name convert_from_exchange_trading_pair
+2022-09-06 23:57:49,243 - 58421 - hummingbot.connector.time_synchronizer - NETWORK - Error getting server time.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 969, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 1050, in create_connection
+    transport, protocol = await self._create_connection_transport(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/base_events.py", line 1080, in _create_connection_transport
+    await waiter
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/selector_events.py", line 846, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/time_synchronizer.py", line 65, in update_server_time_offset_with_time_provider
+    server_time_ms: float = await time_provider
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/connector/exchange/binance/binance_web_utils.py", line 71, in get_current_server_time
+    response = await rest_assistant.execute_request(
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/web_assistant/rest_assistant.py", line 67, in execute_request
+    response = await self.call(request=request, timeout=timeout)
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/web_assistant/rest_assistant.py", line 84, in call
+    resp = await wait_for(self._connection.call(request), timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/Users/clarasoutullo/projects/hummingbot/hummingbot/core/web_assistant/connections/rest_connection.py", line 10, in call
+    aiohttp_resp = await self._client_session.request(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1051, in _create_direct_connection
+    raise last_exc
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 1020, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/opt/anaconda3/envs/hummingbot/lib/python3.8/site-packages/aiohttp/connector.py", line 975, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.binance.com:443 ssl:default [Connection reset by peer]
+2022-09-06 23:57:49,248 - 58421 - hummingbot.connector.time_synchronizer - WARNING - Could not refresh server time. Check network connection.
